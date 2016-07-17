@@ -82,11 +82,12 @@ class PaginaInicialConfig extends \Base\Plantilla {
     protected function organizacion() {
         // Encabezado
         $organizacion              = new \Base\SchemaOrganization();
-        $organizacion->name        = 'GIISI';
-        $organizacion->description = 'Grupo Interdisciplinario de Investigaciones Sistémico Interpretativas.';
-        $organizacion->image       = 'imagenes/giisi.png';
+        $organizacion->name        = 'Grupo Interdisciplinario de Investigaciones Sistémico-Interpretativas, S.C. (GIISI)';
+        $organizacion->description = 'Un intento por compartir y difundir la Sistemología Interpretativa en México.';
+        $organizacion->image       = 'imagenes/giisi.jpg';
         $organizacion->is_article  = false;
         $organizacion->big_heading = true;
+        $organizacion->image_show  = true;
         // Acumular
         $this->contenido[] = '  <section id="organizacion">';
         $this->contenido[] = $organizacion->html();
@@ -210,9 +211,9 @@ class PaginaInicialConfig extends \Base\Plantilla {
         $this->contenido[] = '    <div class="row">';
         $this->contenido[] = '      <div class="col-md-8">';
         $this->contenido[] = '        <a href="index.html">Inicio</a> |';
+        $this->contenido[] = '        <a href="a-cerca/index.html">A Cerca</a> | ';
         $this->contenido[] = '        <a href="articulos/index.html">Artículos</a> | ';
-        $this->contenido[] = '        <a href="licencias/index.html">Licencias</a> | ';
-        $this->contenido[] = '        <a href="contacto/contacto.html">Contacto</a>';
+        $this->contenido[] = '        <a href="licencias/index.html">Licencias</a>';
         $this->contenido[] = '      </div>';
         $this->contenido[] = '      <div class="col-md-4">';
         $this->contenido[] = '        <div class="pull-right redes-sociales">';

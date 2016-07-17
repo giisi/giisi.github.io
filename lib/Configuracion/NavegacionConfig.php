@@ -28,12 +28,20 @@ namespace Configuracion;
 class NavegacionConfig {
 
     protected $sitio_titulo  = 'GIISI';
-    protected $logotipo; // 'imagenes/logotipo.png'
+    protected $logotipo      = 'imagenes/giisi-menu-superior.png';
     protected $opciones      = array(
+        'A cerca'   => array(
+            'Qué es GIISI'        => 'a-cerca/que-es-giisi.html',
+            'Equipo y Estructura' => 'a-cerca/equipo.html',
+            'Contacto'            => 'a-cerca/contacto.html'),
         'Artículos' => 'articulos/index.html',
         'Licencias' => 'licencias/index.html');
     static public $iconos    = array(
-        'Artículos' => 'fa fa-server',
+        'A cerca'   => 'fa fa-users',
+            'Qué es GIISI'        => 'fa fa-info-circle',
+            'Equipo y Estructura' => 'fa fa-users',
+            'Contacto'            => 'fa fa-fax',
+        'Artículos' => 'fa fa-newspaper-o',
         'Licencias' => 'fa fa-files-o');
     protected $buscador_html = <<<FINAL
           <form method="get" id="" action="http://www.giisi.com.mx/buscador-resultados.html">

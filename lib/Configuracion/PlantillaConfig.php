@@ -31,7 +31,7 @@ class PlantillaConfig {
     public $sitio_url        = 'http://www.siigi.com.mx'; // Sin diagonal al final
     public $rss              = 'rss.xml';
     public $favicon          = 'favicon.ico';
-    public $propio_css       = 'css/plataforma-de-conocimiento.css';
+    public $propio_css       = 'css/giisi.css';
     public $en_raiz          = false;       // Si es verdadero los vínculos serán para un archivo en la raíz del sitio
     public $para_compartir   = false;       // Si es verdadero pondrá los metas para tarjetas en Twitter/Facebook
     public $autor            = 'guivaloz';  // Autor por defecto
@@ -49,7 +49,7 @@ class PlantillaConfig {
           Morris.js            https://morrisjs.github.io/morris.js/
           Evolvere iconos      http://github.com/franksouza183/EvolvereSuit
         Descargue, aprenda y colabore con este Software Libre:
-          GitHub               https://github.com/guivaloz
+          GitHub               https://github.com/MovimientoLibre/movimientolibre.github.io
 
      =========================================================================================== -->
 FINAL;
@@ -89,7 +89,7 @@ FINAL;
             // Font Awesome según https://www.bootstrapcdn.com/
             $this->cabecera_font_awesome_css = '<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">';
             // Google Fonts Droid Sans
-            $this->cabecera_google_fonts_css = '<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">';
+            $this->cabecera_google_fonts_css = '<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">';
         }
     } // constructor
 
